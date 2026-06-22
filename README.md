@@ -279,3 +279,5 @@ This project was created as an original academic/portfolio submission. Feel free
 Built as a portfolio-worthy frontend project demonstrating modern web development practices without frameworks.
 
 **SkillForge** — *Forge Your Skills. Showcase Your Future.*
+
+**SkillForge** — *Forge Your Skills. Showcase Your Future.*
