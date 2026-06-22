@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SkillForge — AI-powered student career and project showcase platform. Build portfolios, track skills, and discover internships.">
+  <title>SkillForge — Forge Your Future in Tech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <div class="page-grid">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+      <div class="container site-header__inner">
+        <a href="index.html" class="logo" aria-label="SkillForge home">
+          <span class="logo__icon" aria-hidden="true">SF</span>
+          SkillForge
+        </a>
+
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul class="site-nav__list" role="list">
+            <li><a href="index.html" class="site-nav__link">Home</a></li>
+            <li><a href="dashboard.html" class="site-nav__link">Dashboard</a></li>
+            <li><a href="projects.html" class="site-nav__link">Projects</a></li>
+            <li><a href="skills.html" class="site-nav__link">Skills</a></li>
+            <li><a href="internships.html" class="site-nav__link">Internships</a></li>
+            <li><a href="profile.html" class="site-nav__link">Profile</a></li>
+            <li><a href="contact.html" class="site-nav__link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button type="button" class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">
+            <span class="theme-toggle__icon theme-toggle__icon--light" aria-hidden="true">☀️</span>
+            <span class="theme-toggle__icon theme-toggle__icon--dark" aria-hidden="true">🌙</span>
+          </button>
+          <button type="button" class="menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation menu">
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-nav-overlay" data-mobile-overlay aria-hidden="true"></div>
+    <nav id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile navigation" aria-hidden="true">
+      <ul class="mobile-nav__list" role="list">
+        <li><a href="index.html" class="mobile-nav__link">Home</a></li>
+        <li><a href="dashboard.html" class="mobile-nav__link">Dashboard</a></li>
+        <li><a href="projects.html" class="mobile-nav__link">Projects</a></li>
+        <li><a href="skills.html" class="mobile-nav__link">Skills</a></li>
+        <li><a href="internships.html" class="mobile-nav__link">Internships</a></li>
+        <li><a href="profile.html" class="mobile-nav__link">Profile</a></li>
+        <li><a href="contact.html" class="mobile-nav__link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main id="main-content">
+      
+      <section class="hero section" aria-labelledby="hero-title">
+        <div class="container hero__grid">
+          <article class="hero__content">
+            <span class="hero__badge" role="status">✨ AI-Powered Career Platform</span>
+            <h1 id="hero-title" class="hero__title">Forge Your Skills. <span>Showcase Your Future.</span></h1>
+            <p class="hero__desc">SkillForge empowers students to build stunning project portfolios, track learning progress, and discover career opportunities — all in one intelligent platform.</p>
+            <div class="hero__actions">
+              <a href="dashboard.html" class="btn btn--primary btn--lg">Launch Dashboard</a>
+              <a href="projects.html" class="btn btn--outline btn--lg">Explore Projects</a>
+            </div>
+          </article>
+          <figure class="hero__visual">
+            <img src="assets/images/hero.png" alt="Illustration of students building projects on SkillForge" class="hero__image" width="640" height="480" loading="eager">
+            <div class="hero__stats">
+              <div class="glass-card hero__stat glass-card--static">
+                <div class="hero__stat-value" data-counter="2400" data-suffix="+">0</div>
+                <div class="hero__stat-label">Students</div>
+              </div>
+              <div class="glass-card hero__stat glass-card--static">
+                <div class="hero__stat-value" data-counter="850" data-suffix="+">0</div>
+                <div class="hero__stat-label">Projects</div>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      
+      <section class="section" aria-labelledby="features-title">
+        <div class="container">
+          <header class="section-header">
+            <span class="section-header__label">Platform Features</span>
+            <h2 id="features-title" class="section-header__title">Everything You Need to Stand Out</h2>
+            <p class="section-header__desc">From portfolio building to AI career insights, SkillForge gives you the tools to accelerate your professional journey.</p>
+          </header>
+          <div class="features-grid">
+            <article class="glass-card feature-card">
+              <div class="feature-card__icon" aria-hidden="true">📁</div>
+              <h3 class="feature-card__title">Project Portfolios</h3>
+              <p class="feature-card__desc">Curate and showcase your best work with rich project cards, tags, and live demo links that impress recruiters.</p>
+            </article>
+            <article class="glass-card feature-card">
+              <div class="feature-card__icon" aria-hidden="true">📊</div>
+              <h3 class="feature-card__title">Skill Tracking</h3>
+              <p class="feature-card__desc">Visualize your learning journey with progress bars, skill rings, and personalized growth milestones.</p>
+            </article>
+            <article class="glass-card feature-card">
+              <div class="feature-card__icon" aria-hidden="true">🤖</div>
+              <h3 class="feature-card__title">AI Career Insights</h3>
+              <p class="feature-card__desc">Receive intelligent recommendations for internships, skill gaps, and portfolio improvements tailored to your profile.</p>
+            </article>
+            <article class="glass-card feature-card">
+              <div class="feature-card__icon" aria-hidden="true">🔍</div>
+              <h3 class="feature-card__title">Internship Explorer</h3>
+              <p class="feature-card__desc">Discover curated internship opportunities filtered by role, location, and work type to find your perfect match.</p>
+            </article>
+            <article class="glass-card feature-card">
+              <div class="feature-card__icon" aria-hidden="true">📈</div>
+              <h3 class="feature-card__title">Progress Dashboard</h3>
+              <p class="feature-card__desc">Monitor your learning streak, recent activity, and career readiness score from a unified command center.</p>
+            </article>
+            <article class="glass-card feature-card">
+              <div class="feature-card__icon" aria-hidden="true">🎓</div>
+              <h3 class="feature-card__title">Student Profiles</h3>
+              <p class="feature-card__desc">Build a professional profile with education timeline, achievements, and verified skill endorsements.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="stats-section" aria-labelledby="stats-title">
+        <div class="container">
+          <h2 id="stats-title" class="sr-only">Platform Statistics</h2>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-item__value" data-counter="2400" data-suffix="+">0</div>
+              <div class="stat-item__label">Active Students</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-item__value" data-counter="850" data-suffix="+">0</div>
+              <div class="stat-item__label">Projects Published</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-item__value" data-counter="320" data-suffix="+">0</div>
+              <div class="stat-item__label">Partner Companies</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-item__value" data-counter="94" data-suffix="%">0</div>
+              <div class="stat-item__label">Satisfaction Rate</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="section" aria-labelledby="cta-title">
+        <div class="container">
+          <article class="glass-card text-center" style="padding: clamp(2rem, 5vw, 4rem);">
+            <h2 id="cta-title">Ready to Forge Your Path?</h2>
+            <p class="text-muted" style="max-width: 48ch; margin: 1rem auto 2rem;">Join thousands of students who are building careers they love with SkillForge.</p>
+            <a href="dashboard.html" class="btn btn--primary btn--lg">Get Started Free</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="logo">
+              <span class="logo__icon" aria-hidden="true">SF</span>
+              SkillForge
+            </a>
+            <p class="footer-brand__desc">Empowering the next generation of innovators through intelligent career tools and portfolio excellence.</p>
+          </div>
+          <nav class="footer-nav" aria-label="Platform links">
+            <h3 class="footer-nav__title">Platform</h3>
+            <ul class="footer-nav__list" role="list">
+              <li><a href="dashboard.html" class="footer-nav__link">Dashboard</a></li>
+              <li><a href="projects.html" class="footer-nav__link">Projects</a></li>
+              <li><a href="skills.html" class="footer-nav__link">Skills</a></li>
+              <li><a href="internships.html" class="footer-nav__link">Internships</a></li>
+            </ul>
+          </nav>
+          <nav class="footer-nav" aria-label="Account links">
+            <h3 class="footer-nav__title">Account</h3>
+            <ul class="footer-nav__list" role="list">
+              <li><a href="profile.html" class="footer-nav__link">Profile</a></li>
+              <li><a href="contact.html" class="footer-nav__link">Contact</a></li>
+            </ul>
+          </nav>
+          <nav class="footer-nav" aria-label="Legal links">
+            <h3 class="footer-nav__title">Legal</h3>
+            <ul class="footer-nav__list" role="list">
+              <li><a href="#" class="footer-nav__link">Privacy Policy</a></li>
+              <li><a href="#" class="footer-nav__link">Terms of Service</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 SkillForge. All rights reserved.</p>
+          <p>Built with passion for student success.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

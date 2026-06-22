@@ -1,0 +1,16 @@
+[
+  {
+    "id": "sample-user-001",
+    "name": "Yug Gupta",
+    "email": "yug@example.com",
+    "role": "Student",
+    "createdAt": "2025-01-15T10:00:00.000Z"
+  },
+  {
+    "id": "sample-user-002",
+    "name": "Priya Sharma",
+    "email": "priya@example.com",
+    "role": "Student",
+    "createdAt": "2025-02-01T14:30:00.000Z"
+  }
+]

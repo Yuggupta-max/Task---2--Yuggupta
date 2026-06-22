@@ -1,0 +1,37 @@
+[
+  {
+    "id": "sample-project-001",
+    "title": "SkillForge Frontend",
+    "category": "Web Development",
+    "description": "Responsive student portfolio platform built with HTML, CSS, and JavaScript",
+    "createdAt": "2025-01-20T09:00:00.000Z"
+  },
+  {
+    "id": "sample-project-002",
+    "title": "Task Manager App",
+    "category": "Productivity",
+    "description": "A drag-and-drop task board with localStorage persistence",
+    "createdAt": "2025-02-10T11:45:00.000Z"
+  },
+  {
+    "id": "sample-project-003",
+    "title": "Weather Dashboard",
+    "category": "API Integration",
+    "description": "Real-time weather data visualization using a public weather API",
+    "createdAt": "2025-03-05T16:20:00.000Z"
+  },
+  {
+    "id": "1782125463856-cmmrqgb",
+    "title": "SkillForge Frontend",
+    "category": "Web Development",
+    "description": "Responsive student career platform",
+    "createdAt": "2026-06-22T10:51:03.856Z"
+  },
+  {
+    "id": "1782126594995-fkzvr7g",
+    "title": "cubesat",
+    "category": "web",
+    "description": "based on space",
+    "createdAt": "2026-06-22T11:09:54.995Z"
+  }
+]

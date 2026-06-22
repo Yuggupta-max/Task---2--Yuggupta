@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Track and visualize your skill development on SkillForge.">
+  <title>Skills — SkillForge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <div class="page-grid">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+      <div class="container site-header__inner">
+        <a href="index.html" class="logo" aria-label="SkillForge home">
+          <span class="logo__icon" aria-hidden="true">SF</span>
+          SkillForge
+        </a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul class="site-nav__list" role="list">
+            <li><a href="index.html" class="site-nav__link">Home</a></li>
+            <li><a href="dashboard.html" class="site-nav__link">Dashboard</a></li>
+            <li><a href="projects.html" class="site-nav__link">Projects</a></li>
+            <li><a href="skills.html" class="site-nav__link">Skills</a></li>
+            <li><a href="internships.html" class="site-nav__link">Internships</a></li>
+            <li><a href="profile.html" class="site-nav__link">Profile</a></li>
+            <li><a href="contact.html" class="site-nav__link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button type="button" class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">
+            <span class="theme-toggle__icon theme-toggle__icon--light" aria-hidden="true">☀️</span>
+            <span class="theme-toggle__icon theme-toggle__icon--dark" aria-hidden="true">🌙</span>
+          </button>
+          <button type="button" class="menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation menu">
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-nav-overlay" data-mobile-overlay aria-hidden="true"></div>
+    <nav id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile navigation">
+      <ul class="mobile-nav__list" role="list">
+        <li><a href="index.html" class="mobile-nav__link">Home</a></li>
+        <li><a href="dashboard.html" class="mobile-nav__link">Dashboard</a></li>
+        <li><a href="projects.html" class="mobile-nav__link">Projects</a></li>
+        <li><a href="skills.html" class="mobile-nav__link">Skills</a></li>
+        <li><a href="internships.html" class="mobile-nav__link">Internships</a></li>
+        <li><a href="profile.html" class="mobile-nav__link">Profile</a></li>
+        <li><a href="contact.html" class="mobile-nav__link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main id="main-content">
+      <section class="section">
+        <div class="container">
+          <header class="section-header">
+            <span class="section-header__label">Growth Tracker</span>
+            <h1 class="section-header__title">Skills &amp; Progress</h1>
+            <p class="section-header__desc">Monitor your technical and soft skills. Add custom skills and track your learning journey over time.</p>
+          </header>
+
+          
+          <div class="skills-overview" aria-label="Skill category overview">
+            <article class="glass-card skill-ring glass-card--static">
+              <svg class="skill-ring__svg" viewBox="0 0 100 100" aria-hidden="true">
+                <circle cx="50" cy="50" r="42" fill="none" stroke="var(--color-border)" stroke-width="8"/>
+                <circle cx="50" cy="50" r="42" fill="none" stroke="var(--color-primary)" stroke-width="8" stroke-dasharray="264" stroke-dashoffset="40" stroke-linecap="round" transform="rotate(-90 50 50)"/>
+              </svg>
+              <span class="skill-ring__label">Development</span>
+              <span class="skill-ring__value">85% avg</span>
+            </article>
+            <article class="glass-card skill-ring glass-card--static">
+              <svg class="skill-ring__svg" viewBox="0 0 100 100" aria-hidden="true">
+                <circle cx="50" cy="50" r="42" fill="none" stroke="var(--color-border)" stroke-width="8"/>
+                <circle cx="50" cy="50" r="42" fill="none" stroke="var(--color-secondary-dark)" stroke-width="8" stroke-dasharray="264" stroke-dashoffset="79" stroke-linecap="round" transform="rotate(-90 50 50)"/>
+              </svg>
+              <span class="skill-ring__label">Design</span>
+              <span class="skill-ring__value">70% avg</span>
+            </article>
+            <article class="glass-card skill-ring glass-card--static">
+              <svg class="skill-ring__svg" viewBox="0 0 100 100" aria-hidden="true">
+                <circle cx="50" cy="50" r="42" fill="none" stroke="var(--color-border)" stroke-width="8"/>
+                <circle cx="50" cy="50" r="42" fill="none" stroke="var(--color-primary)" stroke-width="8" stroke-dasharray="264" stroke-dashoffset="58" stroke-linecap="round" transform="rotate(-90 50 50)"/>
+              </svg>
+              <span class="skill-ring__label">Data</span>
+              <span class="skill-ring__value">78% avg</span>
+            </article>
+            <article class="glass-card skill-ring glass-card--static">
+              <svg class="skill-ring__svg" viewBox="0 0 100 100" aria-hidden="true">
+                <circle cx="50" cy="50" r="42" fill="none" stroke="var(--color-border)" stroke-width="8"/>
+                <circle cx="50" cy="50" r="42" fill="none" stroke="var(--color-secondary-dark)" stroke-width="8" stroke-dasharray="264" stroke-dashoffset="95" stroke-linecap="round" transform="rotate(-90 50 50)"/>
+              </svg>
+              <span class="skill-ring__label">Soft Skills</span>
+              <span class="skill-ring__value">64% avg</span>
+            </article>
+          </div>
+
+          
+          <div class="skills-categories">
+            <article class="glass-card" aria-labelledby="dev-skills-title">
+              <h2 id="dev-skills-title" class="skill-category__title">💻 Development</h2>
+              <div class="skill-item">
+                <span class="skill-item__name">JavaScript</span>
+                <div class="skill-item__track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript">
+                  <div class="skill-item__fill" data-skill-fill="85"></div>
+                </div>
+                <span class="skill-item__pct">85%</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-item__name">Python</span>
+                <div class="skill-item__track" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" aria-label="Python">
+                  <div class="skill-item__fill" data-skill-fill="72"></div>
+                </div>
+                <span class="skill-item__pct">72%</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-item__name">HTML/CSS</span>
+                <div class="skill-item__track" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="HTML and CSS">
+                  <div class="skill-item__fill" data-skill-fill="92"></div>
+                </div>
+                <span class="skill-item__pct">92%</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-item__name">Git</span>
+                <div class="skill-item__track" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" aria-label="Git">
+                  <div class="skill-item__fill" data-skill-fill="78"></div>
+                </div>
+                <span class="skill-item__pct">78%</span>
+              </div>
+            </article>
+
+            <article class="glass-card" aria-labelledby="design-skills-title">
+              <h2 id="design-skills-title" class="skill-category__title">🎨 Design</h2>
+              <div class="skill-item">
+                <span class="skill-item__name">Figma</span>
+                <div class="skill-item__track" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Figma">
+                  <div class="skill-item__fill" data-skill-fill="80"></div>
+                </div>
+                <span class="skill-item__pct">80%</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-item__name">UI/UX</span>
+                <div class="skill-item__track" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="UI/UX">
+                  <div class="skill-item__fill" data-skill-fill="65"></div>
+                </div>
+                <span class="skill-item__pct">65%</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-item__name">Prototyping</span>
+                <div class="skill-item__track" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="Prototyping">
+                  <div class="skill-item__fill" data-skill-fill="70"></div>
+                </div>
+                <span class="skill-item__pct">70%</span>
+              </div>
+            </article>
+          </div>
+
+          
+          <article class="glass-card" style="margin-top: 2rem;" aria-labelledby="tracker-title">
+            <h2 id="tracker-title" class="skill-category__title">➕ Add Custom Skill</h2>
+            <p class="text-muted" style="font-size: 0.875rem; margin-bottom: 1rem;">Track additional skills — saved to your browser via localStorage.</p>
+            <form class="skill-tracker-form" data-skill-form novalidate>
+              <div class="form-group">
+                <label for="skill-name" class="form-label">Skill Name</label>
+                <input type="text" id="skill-name" name="skill-name" class="form-input" placeholder="e.g. TypeScript" required aria-required="true">
+              </div>
+              <div class="form-group">
+                <label for="skill-level" class="form-label">Proficiency (0–100)</label>
+                <input type="number" id="skill-level" name="skill-level" class="form-input" min="0" max="100" value="50" required aria-required="true">
+              </div>
+              <button type="submit" class="btn btn--primary">Add Skill</button>
+            </form>
+            <div data-custom-skills style="margin-top: 1.5rem;" aria-label="Custom tracked skills"></div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-bottom" style="margin-top: 0; border-top: none; padding-top: 0;">
+          <p>&copy; 2025 SkillForge. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

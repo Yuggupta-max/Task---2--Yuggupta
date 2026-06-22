@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover internship opportunities tailored for students on SkillForge.">
+  <title>Internship Explorer — SkillForge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <div class="page-grid">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+      <div class="container site-header__inner">
+        <a href="index.html" class="logo" aria-label="SkillForge home">
+          <span class="logo__icon" aria-hidden="true">SF</span>
+          SkillForge
+        </a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul class="site-nav__list" role="list">
+            <li><a href="index.html" class="site-nav__link">Home</a></li>
+            <li><a href="dashboard.html" class="site-nav__link">Dashboard</a></li>
+            <li><a href="projects.html" class="site-nav__link">Projects</a></li>
+            <li><a href="skills.html" class="site-nav__link">Skills</a></li>
+            <li><a href="internships.html" class="site-nav__link">Internships</a></li>
+            <li><a href="profile.html" class="site-nav__link">Profile</a></li>
+            <li><a href="contact.html" class="site-nav__link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button type="button" class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">
+            <span class="theme-toggle__icon theme-toggle__icon--light" aria-hidden="true">☀️</span>
+            <span class="theme-toggle__icon theme-toggle__icon--dark" aria-hidden="true">🌙</span>
+          </button>
+          <button type="button" class="menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation menu">
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-nav-overlay" data-mobile-overlay aria-hidden="true"></div>
+    <nav id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile navigation">
+      <ul class="mobile-nav__list" role="list">
+        <li><a href="index.html" class="mobile-nav__link">Home</a></li>
+        <li><a href="dashboard.html" class="mobile-nav__link">Dashboard</a></li>
+        <li><a href="projects.html" class="mobile-nav__link">Projects</a></li>
+        <li><a href="skills.html" class="mobile-nav__link">Skills</a></li>
+        <li><a href="internships.html" class="mobile-nav__link">Internships</a></li>
+        <li><a href="profile.html" class="mobile-nav__link">Profile</a></li>
+        <li><a href="contact.html" class="mobile-nav__link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main id="main-content">
+      <section class="section">
+        <div class="container">
+          <header class="section-header">
+            <span class="section-header__label">Opportunities</span>
+            <h1 class="section-header__title">Internship Explorer</h1>
+            <p class="section-header__desc">Find internships that match your skills and career goals. Filter by role, location, and work type.</p>
+          </header>
+
+          
+          <form class="internship-filters glass-card glass-card--static" aria-label="Filter internships">
+            <div class="form-group">
+              <label for="filter-role" class="form-label">Role / Keyword</label>
+              <input type="text" id="filter-role" class="form-input" data-filter-role placeholder="e.g. Frontend, Data…" aria-label="Filter by role">
+            </div>
+            <div class="form-group">
+              <label for="filter-location" class="form-label">Location</label>
+              <input type="text" id="filter-location" class="form-input" data-filter-location placeholder="e.g. Remote, San Francisco…" aria-label="Filter by location">
+            </div>
+            <div class="form-group">
+              <label for="filter-type" class="form-label">Work Type</label>
+              <select id="filter-type" class="form-select" data-filter-type aria-label="Filter by work type">
+                <option value="">All Types</option>
+                <option value="remote">Remote</option>
+                <option value="hybrid">Hybrid</option>
+                <option value="onsite">On-site</option>
+              </select>
+            </div>
+          </form>
+
+          
+          <div class="internships-list" role="list" aria-label="Internship listings">
+            <article class="glass-card internship-card" data-internship-card data-role="frontend developer react" data-location="remote" data-type="remote" role="listitem">
+              <div class="internship-card__header">
+                <div>
+                  <h2 class="internship-card__company">Stripe</h2>
+                  <p class="internship-card__role">Frontend Engineering Intern</p>
+                </div>
+                <span class="internship-card__badge">Remote</span>
+              </div>
+              <div class="internship-card__details">
+                <span>📍 Remote (US)</span>
+                <span>💰 $45/hr</span>
+                <span>📅 Summer 2025</span>
+              </div>
+              <p class="text-muted" style="font-size: 0.875rem; margin-bottom: 1rem;">Build payment UI components used by millions. Requires React, TypeScript, and strong CSS fundamentals.</p>
+              <div class="internship-card__tags">
+                <span class="project-card__tag">React</span>
+                <span class="project-card__tag">TypeScript</span>
+              </div>
+            </article>
+
+            <article class="glass-card internship-card" data-internship-card data-role="data science analyst python" data-location="san francisco" data-type="hybrid" role="listitem">
+              <div class="internship-card__header">
+                <div>
+                  <h2 class="internship-card__company">Google</h2>
+                  <p class="internship-card__role">Data Science Intern</p>
+                </div>
+                <span class="internship-card__badge">Hybrid</span>
+              </div>
+              <div class="internship-card__details">
+                <span>📍 Mountain View, CA</span>
+                <span>💰 $52/hr</span>
+                <span>📅 Fall 2025</span>
+              </div>
+              <p class="text-muted" style="font-size: 0.875rem; margin-bottom: 1rem;">Analyze large-scale datasets and build ML pipelines. Python, SQL, and statistics background required.</p>
+              <div class="internship-card__tags">
+                <span class="project-card__tag">Python</span>
+                <span class="project-card__tag">SQL</span>
+              </div>
+            </article>
+
+            <article class="glass-card internship-card" data-internship-card data-role="ux design ui" data-location="new york" data-type="onsite" role="listitem">
+              <div class="internship-card__header">
+                <div>
+                  <h2 class="internship-card__company">Spotify</h2>
+                  <p class="internship-card__role">UX Design Intern</p>
+                </div>
+                <span class="internship-card__badge">On-site</span>
+              </div>
+              <div class="internship-card__details">
+                <span>📍 New York, NY</span>
+                <span>💰 $40/hr</span>
+                <span>📅 Summer 2025</span>
+              </div>
+              <p class="text-muted" style="font-size: 0.875rem; margin-bottom: 1rem;">Design intuitive music discovery experiences. Portfolio with Figma prototypes and user research required.</p>
+              <div class="internship-card__tags">
+                <span class="project-card__tag">Figma</span>
+                <span class="project-card__tag">UX Research</span>
+              </div>
+            </article>
+
+            <article class="glass-card internship-card" data-internship-card data-role="backend engineer node" data-location="remote" data-type="remote" role="listitem">
+              <div class="internship-card__header">
+                <div>
+                  <h2 class="internship-card__company">Vercel</h2>
+                  <p class="internship-card__role">Backend Engineering Intern</p>
+                </div>
+                <span class="internship-card__badge">Remote</span>
+              </div>
+              <div class="internship-card__details">
+                <span>📍 Remote (Global)</span>
+                <span>💰 $48/hr</span>
+                <span>📅 Summer 2025</span>
+              </div>
+              <p class="text-muted" style="font-size: 0.875rem; margin-bottom: 1rem;">Work on serverless infrastructure powering the modern web. Node.js, Go, or Rust experience preferred.</p>
+              <div class="internship-card__tags">
+                <span class="project-card__tag">Node.js</span>
+                <span class="project-card__tag">Go</span>
+              </div>
+            </article>
+
+            <article class="glass-card internship-card" data-internship-card data-role="mobile developer flutter ios android" data-location="austin" data-type="hybrid" role="listitem">
+              <div class="internship-card__header">
+                <div>
+                  <h2 class="internship-card__company">Apple</h2>
+                  <p class="internship-card__role">iOS Development Intern</p>
+                </div>
+                <span class="internship-card__badge">Hybrid</span>
+              </div>
+              <div class="internship-card__details">
+                <span>📍 Austin, TX</span>
+                <span>💰 $50/hr</span>
+                <span>📅 Fall 2025</span>
+              </div>
+              <p class="text-muted" style="font-size: 0.875rem; margin-bottom: 1rem;">Contribute to native iOS apps used by billions. Swift, UIKit, and app architecture knowledge required.</p>
+              <div class="internship-card__tags">
+                <span class="project-card__tag">Swift</span>
+                <span class="project-card__tag">iOS</span>
+              </div>
+            </article>
+
+            <article class="glass-card internship-card" data-internship-card data-role="product manager pm" data-location="seattle" data-type="onsite" role="listitem">
+              <div class="internship-card__header">
+                <div>
+                  <h2 class="internship-card__company">Microsoft</h2>
+                  <p class="internship-card__role">Product Management Intern</p>
+                </div>
+                <span class="internship-card__badge">On-site</span>
+              </div>
+              <div class="internship-card__details">
+                <span>📍 Seattle, WA</span>
+                <span>💰 $46/hr</span>
+                <span>📅 Summer 2025</span>
+              </div>
+              <p class="text-muted" style="font-size: 0.875rem; margin-bottom: 1rem;">Drive product strategy for Azure cloud services. Strong analytical skills and technical background preferred.</p>
+              <div class="internship-card__tags">
+                <span class="project-card__tag">Strategy</span>
+                <span class="project-card__tag">Analytics</span>
+              </div>
+            </article>
+          </div>
+
+          <p class="no-results" data-no-results role="status">No internships match your filters. Try adjusting your search criteria.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-bottom" style="margin-top: 0; border-top: none; padding-top: 0;">
+          <p>&copy; 2025 SkillForge. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

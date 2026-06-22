@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SkillForge Dashboard — Your personal career command center with AI insights and progress tracking.">
+  <title>Dashboard — SkillForge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <div class="page-grid">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+      <div class="container site-header__inner">
+        <a href="index.html" class="logo" aria-label="SkillForge home">
+          <span class="logo__icon" aria-hidden="true">SF</span>
+          SkillForge
+        </a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul class="site-nav__list" role="list">
+            <li><a href="index.html" class="site-nav__link">Home</a></li>
+            <li><a href="dashboard.html" class="site-nav__link">Dashboard</a></li>
+            <li><a href="projects.html" class="site-nav__link">Projects</a></li>
+            <li><a href="skills.html" class="site-nav__link">Skills</a></li>
+            <li><a href="internships.html" class="site-nav__link">Internships</a></li>
+            <li><a href="profile.html" class="site-nav__link">Profile</a></li>
+            <li><a href="contact.html" class="site-nav__link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button type="button" class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">
+            <span class="theme-toggle__icon theme-toggle__icon--light" aria-hidden="true">☀️</span>
+            <span class="theme-toggle__icon theme-toggle__icon--dark" aria-hidden="true">🌙</span>
+          </button>
+          <button type="button" class="menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation menu">
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-nav-overlay" data-mobile-overlay aria-hidden="true"></div>
+    <nav id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile navigation">
+      <ul class="mobile-nav__list" role="list">
+        <li><a href="index.html" class="mobile-nav__link">Home</a></li>
+        <li><a href="dashboard.html" class="mobile-nav__link">Dashboard</a></li>
+        <li><a href="projects.html" class="mobile-nav__link">Projects</a></li>
+        <li><a href="skills.html" class="mobile-nav__link">Skills</a></li>
+        <li><a href="internships.html" class="mobile-nav__link">Internships</a></li>
+        <li><a href="profile.html" class="mobile-nav__link">Profile</a></li>
+        <li><a href="contact.html" class="mobile-nav__link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main id="main-content">
+      <div class="container dashboard-grid">
+        
+        <aside class="dashboard-sidebar" aria-label="Dashboard sidebar">
+          <article class="glass-card dashboard-welcome">
+            <h1 class="dashboard-welcome__greeting" data-greeting>Good morning, Alex!</h1>
+            <p class="dashboard-welcome__sub">Your career readiness score is <strong>78%</strong> — keep building!</p>
+            <div class="profile-stats" style="margin-top: 1rem;">
+              <div>
+                <div class="profile-stat__value" data-streak>12</div>
+                <div class="profile-stat__label">Day Streak 🔥</div>
+              </div>
+              <div>
+                <div class="profile-stat__value">6</div>
+                <div class="profile-stat__label">Projects</div>
+              </div>
+            </div>
+          </article>
+          <nav class="glass-card" style="margin-top: 1rem;" aria-label="Quick actions">
+            <h2 class="widget__title" style="margin-bottom: 0.75rem;">Quick Actions</h2>
+            <div class="quick-actions">
+              <a href="projects.html" class="btn btn--primary btn--sm">Add Project</a>
+              <a href="skills.html" class="btn btn--secondary btn--sm">Log Skill</a>
+              <a href="internships.html" class="btn btn--outline btn--sm">Find Internship</a>
+            </div>
+          </nav>
+        </aside>
+
+        
+        <section aria-labelledby="dashboard-title">
+          <header class="section-header" style="margin-bottom: 1.5rem;">
+            <span class="section-header__label">Overview</span>
+            <h2 id="dashboard-title" class="section-header__title">Career Dashboard</h2>
+          </header>
+
+          <div class="widget-grid">
+            
+            <article class="glass-card ai-panel widget--wide" data-ai-recommendations aria-labelledby="ai-title">
+              <div class="ai-panel__header">
+                <h3 id="ai-title" class="widget__title">AI Career Insights</h3>
+                <span class="ai-panel__badge">✨ Simulated AI</span>
+              </div>
+              <ul class="ai-panel__list" data-ai-list role="list"></ul>
+              <button type="button" class="btn btn--outline btn--sm" data-ai-refresh style="margin-top: 1rem;">Refresh Insights</button>
+            </article>
+
+            
+            <article class="glass-card" aria-labelledby="progress-title">
+              <div class="widget__header">
+                <h3 id="progress-title" class="widget__title">Learning Progress</h3>
+                <a href="skills.html" class="btn btn--sm btn--outline">View All</a>
+              </div>
+              <div class="progress-list">
+                <div class="progress-item">
+                  <div class="progress-item__header">
+                    <span>JavaScript</span>
+                    <span>85%</span>
+                  </div>
+                  <div class="progress-item__bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript progress">
+                    <div class="progress-item__fill" data-dashboard-progress="85" style="width: 0"></div>
+                  </div>
+                </div>
+                <div class="progress-item">
+                  <div class="progress-item__header">
+                    <span>Python</span>
+                    <span>72%</span>
+                  </div>
+                  <div class="progress-item__bar" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" aria-label="Python progress">
+                    <div class="progress-item__fill" data-dashboard-progress="72" style="width: 0"></div>
+                  </div>
+                </div>
+                <div class="progress-item">
+                  <div class="progress-item__header">
+                    <span>UI/UX Design</span>
+                    <span>60%</span>
+                  </div>
+                  <div class="progress-item__bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" aria-label="UI/UX Design progress">
+                    <div class="progress-item__fill" data-dashboard-progress="60" style="width: 0"></div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            
+            <article class="glass-card" aria-labelledby="activity-title">
+              <div class="widget__header">
+                <h3 id="activity-title" class="widget__title">Recent Activity</h3>
+              </div>
+              <ul class="activity-list" role="list">
+                <li class="activity-item">
+                  <span class="activity-item__dot" aria-hidden="true"></span>
+                  <span class="activity-item__text">Updated EcoTrack App project</span>
+                  <time class="activity-item__time" datetime="2025-06-20">2h ago</time>
+                </li>
+                <li class="activity-item">
+                  <span class="activity-item__dot" aria-hidden="true"></span>
+                  <span class="activity-item__text">Completed React module on Skills page</span>
+                  <time class="activity-item__time" datetime="2025-06-19">Yesterday</time>
+                </li>
+                <li class="activity-item">
+                  <span class="activity-item__dot" aria-hidden="true"></span>
+                  <span class="activity-item__text">Saved Stripe internship listing</span>
+                  <time class="activity-item__time" datetime="2025-06-18">2 days ago</time>
+                </li>
+                <li class="activity-item">
+                  <span class="activity-item__dot" aria-hidden="true"></span>
+                  <span class="activity-item__text">Profile viewed by 3 recruiters</span>
+                  <time class="activity-item__time" datetime="2025-06-17">3 days ago</time>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-bottom" style="margin-top: 0; border-top: none; padding-top: 0;">
+          <p>&copy; 2025 SkillForge. All rights reserved.</p>
+          <p>Built with passion for student success.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/dashboard.js" defer></script>
+</body>
+</html>

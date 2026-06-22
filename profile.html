@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View and manage your SkillForge student profile.">
+  <title>Profile — SkillForge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <div class="page-grid">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+      <div class="container site-header__inner">
+        <a href="index.html" class="logo" aria-label="SkillForge home">
+          <span class="logo__icon" aria-hidden="true">SF</span>
+          SkillForge
+        </a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul class="site-nav__list" role="list">
+            <li><a href="index.html" class="site-nav__link">Home</a></li>
+            <li><a href="dashboard.html" class="site-nav__link">Dashboard</a></li>
+            <li><a href="projects.html" class="site-nav__link">Projects</a></li>
+            <li><a href="skills.html" class="site-nav__link">Skills</a></li>
+            <li><a href="internships.html" class="site-nav__link">Internships</a></li>
+            <li><a href="profile.html" class="site-nav__link">Profile</a></li>
+            <li><a href="contact.html" class="site-nav__link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button type="button" class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">
+            <span class="theme-toggle__icon theme-toggle__icon--light" aria-hidden="true">☀️</span>
+            <span class="theme-toggle__icon theme-toggle__icon--dark" aria-hidden="true">🌙</span>
+          </button>
+          <button type="button" class="menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation menu">
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-nav-overlay" data-mobile-overlay aria-hidden="true"></div>
+    <nav id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile navigation">
+      <ul class="mobile-nav__list" role="list">
+        <li><a href="index.html" class="mobile-nav__link">Home</a></li>
+        <li><a href="dashboard.html" class="mobile-nav__link">Dashboard</a></li>
+        <li><a href="projects.html" class="mobile-nav__link">Projects</a></li>
+        <li><a href="skills.html" class="mobile-nav__link">Skills</a></li>
+        <li><a href="internships.html" class="mobile-nav__link">Internships</a></li>
+        <li><a href="profile.html" class="mobile-nav__link">Profile</a></li>
+        <li><a href="contact.html" class="mobile-nav__link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main id="main-content">
+      <section class="section">
+        <div class="container">
+          
+          <header class="profile-header glass-card glass-card--static">
+            <img src="assets/images/image.png" alt="Alex Chen profile photo" class="profile-avatar" width="120" height="120" loading="lazy">
+            <div class="profile-info">
+              <h1 class="profile-info__name">Alex Chen</h1>
+              <p class="profile-info__role">Computer Science Student · Full-Stack Developer</p>
+              <p class="profile-info__bio">Passionate about building accessible web applications and exploring the intersection of design and technology. Currently seeking summer 2025 internships in frontend development.</p>
+              <div class="profile-stats" aria-label="Profile statistics">
+                <div>
+                  <div class="profile-stat__value">6</div>
+                  <div class="profile-stat__label">Projects</div>
+                </div>
+                <div>
+                  <div class="profile-stat__value">18</div>
+                  <div class="profile-stat__label">Skills</div>
+                </div>
+                <div>
+                  <div class="profile-stat__value">78%</div>
+                  <div class="profile-stat__label">Career Ready</div>
+                </div>
+                <div>
+                  <div class="profile-stat__value">12</div>
+                  <div class="profile-stat__label">Day Streak</div>
+                </div>
+              </div>
+            </div>
+          </header>
+
+          <div class="profile-sections">
+            
+            <article class="glass-card" aria-labelledby="education-title">
+              <h2 id="education-title" class="skill-category__title">🎓 Education</h2>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <time class="timeline-item__year" datetime="2022">2022 — Present</time>
+                  <h3 class="timeline-item__title">B.S. Computer Science</h3>
+                  <p class="timeline-item__desc">University of California, Berkeley — GPA 3.8/4.0. Focus: Software Engineering &amp; Human-Computer Interaction.</p>
+                </div>
+                <div class="timeline-item">
+                  <time class="timeline-item__year" datetime="2021">2021</time>
+                  <h3 class="timeline-item__title">Google Code-in Finalist</h3>
+                  <p class="timeline-item__desc">Contributed to open-source projects and mentored by Google engineers for 3 months.</p>
+                </div>
+                <div class="timeline-item">
+                  <time class="timeline-item__year" datetime="2020">2020</time>
+                  <h3 class="timeline-item__title">AP Computer Science A — Score 5</h3>
+                  <p class="timeline-item__desc">Lincoln High School, San Francisco. President of Coding Club.</p>
+                </div>
+              </div>
+            </article>
+
+            
+            <article class="glass-card" aria-labelledby="achievements-title">
+              <h2 id="achievements-title" class="skill-category__title">🏆 Achievements</h2>
+              <ul class="activity-list" role="list">
+                <li class="activity-item">
+                  <span class="activity-item__dot" aria-hidden="true"></span>
+                  <span class="activity-item__text"><strong>Hackathon Winner</strong> — CalHacks 2024, Best Sustainability Project</span>
+                </li>
+                <li class="activity-item">
+                  <span class="activity-item__dot" aria-hidden="true"></span>
+                  <span class="activity-item__text"><strong>Dean's List</strong> — Fall 2023 &amp; Spring 2024 semesters</span>
+                </li>
+                <li class="activity-item">
+                  <span class="activity-item__dot" aria-hidden="true"></span>
+                  <span class="activity-item__text"><strong>Open Source Contributor</strong> — 15+ merged PRs on GitHub</span>
+                </li>
+                <li class="activity-item">
+                  <span class="activity-item__dot" aria-hidden="true"></span>
+                  <span class="activity-item__text"><strong>Tech Lead</strong> — Berkeley Developer Student Club</span>
+                </li>
+              </ul>
+            </article>
+
+            
+            <article class="glass-card widget--wide" aria-labelledby="top-skills-title" style="grid-column: 1 / -1;">
+              <h2 id="top-skills-title" class="skill-category__title">⚡ Top Skills</h2>
+              <div class="filter-tags" role="list" aria-label="Top skills">
+                <span class="project-card__tag" role="listitem">JavaScript</span>
+                <span class="project-card__tag" role="listitem">React</span>
+                <span class="project-card__tag" role="listitem">Python</span>
+                <span class="project-card__tag" role="listitem">Node.js</span>
+                <span class="project-card__tag" role="listitem">Figma</span>
+                <span class="project-card__tag" role="listitem">Git</span>
+                <span class="project-card__tag" role="listitem">HTML/CSS</span>
+                <span class="project-card__tag" role="listitem">MongoDB</span>
+                <span class="project-card__tag" role="listitem">TypeScript</span>
+                <span class="project-card__tag" role="listitem">UI/UX Design</span>
+              </div>
+              <div style="margin-top: 1.5rem;">
+                <a href="skills.html" class="btn btn--outline btn--sm">Manage Skills</a>
+                <a href="projects.html" class="btn btn--primary btn--sm" style="margin-left: 0.5rem;">View Projects</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-bottom" style="margin-top: 0; border-top: none; padding-top: 0;">
+          <p>&copy; 2025 SkillForge. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

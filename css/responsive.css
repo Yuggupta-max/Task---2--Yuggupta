@@ -1,0 +1,186 @@
+
+
+
+@media (min-width: 768px) {
+  :root {
+    --header-height: 80px;
+  }
+
+  
+  .site-nav {
+    display: block;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .mobile-nav,
+  .mobile-nav-overlay {
+    display: none;
+  }
+
+  
+  .hero__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .hero__stats {
+    left: auto;
+    right: -1.5rem;
+    bottom: 1.5rem;
+    width: auto;
+  }
+
+  
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  
+  .stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  
+  .widget-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .widget--wide {
+    grid-column: span 2;
+  }
+
+  
+  .filter-bar {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  
+  .skills-overview {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  
+  .skills-categories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  
+  .internship-filters {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  
+  .profile-header {
+    grid-template-columns: auto 1fr;
+  }
+
+  
+  .contact-grid {
+    grid-template-columns: 1fr 1.5fr;
+  }
+
+  
+  .footer-grid {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .container {
+    width: min(100% - 4rem, var(--max-width));
+  }
+
+  
+  .features-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  
+  .dashboard-grid {
+    grid-template-columns: 280px 1fr;
+    gap: 2rem;
+  }
+
+  .dashboard-sidebar {
+    position: sticky;
+    top: calc(var(--header-height) + 1.5rem);
+    align-self: start;
+  }
+
+  
+  .profile-sections {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  
+  .internships-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  
+  .skill-tracker-form {
+    grid-template-columns: 1fr 1fr auto;
+    align-items: end;
+  }
+}
+
+
+@media (min-width: 1280px) {
+  .hero__grid {
+    gap: 4rem;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 300px 1fr;
+  }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+@media (prefers-contrast: high) {
+  .glass-card {
+    background: var(--color-surface-solid);
+    border-width: 2px;
+  }
+
+  .btn--primary {
+    border: 2px solid var(--color-text);
+  }
+}

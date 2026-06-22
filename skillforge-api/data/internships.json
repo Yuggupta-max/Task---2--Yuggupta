@@ -1,0 +1,23 @@
+[
+  {
+    "id": "sample-internship-001",
+    "company": "Google",
+    "role": "Frontend Intern",
+    "location": "Remote",
+    "createdAt": "2025-02-15T10:00:00.000Z"
+  },
+  {
+    "id": "sample-internship-002",
+    "company": "Microsoft",
+    "role": "Software Engineering Intern",
+    "location": "Bangalore",
+    "createdAt": "2025-02-20T12:00:00.000Z"
+  },
+  {
+    "id": "sample-internship-003",
+    "company": "StartupXYZ",
+    "role": "Full Stack Intern",
+    "location": "Hybrid",
+    "createdAt": "2025-03-01T09:30:00.000Z"
+  }
+]

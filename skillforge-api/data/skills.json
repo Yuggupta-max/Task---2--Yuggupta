@@ -1,0 +1,26 @@
+[
+  {
+    "id": "sample-skill-001",
+    "name": "JavaScript",
+    "level": 85,
+    "updatedAt": "2025-03-01T08:00:00.000Z"
+  },
+  {
+    "id": "sample-skill-002",
+    "name": "HTML",
+    "level": 90,
+    "updatedAt": "2025-03-01T08:00:00.000Z"
+  },
+  {
+    "id": "sample-skill-003",
+    "name": "CSS",
+    "level": 78,
+    "updatedAt": "2025-03-01T08:00:00.000Z"
+  },
+  {
+    "id": "sample-skill-004",
+    "name": "Python",
+    "level": 55,
+    "updatedAt": "2025-03-01T08:00:00.000Z"
+  }
+]

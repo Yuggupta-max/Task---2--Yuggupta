@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse and manage your project portfolio on SkillForge.">
+  <title>Projects — SkillForge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <div class="page-grid">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+      <div class="container site-header__inner">
+        <a href="index.html" class="logo" aria-label="SkillForge home">
+          <span class="logo__icon" aria-hidden="true">SF</span>
+          SkillForge
+        </a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul class="site-nav__list" role="list">
+            <li><a href="index.html" class="site-nav__link">Home</a></li>
+            <li><a href="dashboard.html" class="site-nav__link">Dashboard</a></li>
+            <li><a href="projects.html" class="site-nav__link">Projects</a></li>
+            <li><a href="skills.html" class="site-nav__link">Skills</a></li>
+            <li><a href="internships.html" class="site-nav__link">Internships</a></li>
+            <li><a href="profile.html" class="site-nav__link">Profile</a></li>
+            <li><a href="contact.html" class="site-nav__link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button type="button" class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">
+            <span class="theme-toggle__icon theme-toggle__icon--light" aria-hidden="true">☀️</span>
+            <span class="theme-toggle__icon theme-toggle__icon--dark" aria-hidden="true">🌙</span>
+          </button>
+          <button type="button" class="menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation menu">
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-nav-overlay" data-mobile-overlay aria-hidden="true"></div>
+    <nav id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile navigation">
+      <ul class="mobile-nav__list" role="list">
+        <li><a href="index.html" class="mobile-nav__link">Home</a></li>
+        <li><a href="dashboard.html" class="mobile-nav__link">Dashboard</a></li>
+        <li><a href="projects.html" class="mobile-nav__link">Projects</a></li>
+        <li><a href="skills.html" class="mobile-nav__link">Skills</a></li>
+        <li><a href="internships.html" class="mobile-nav__link">Internships</a></li>
+        <li><a href="profile.html" class="mobile-nav__link">Profile</a></li>
+        <li><a href="contact.html" class="mobile-nav__link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main id="main-content">
+      <section class="section">
+        <div class="container">
+          <header class="section-header">
+            <span class="section-header__label">Portfolio</span>
+            <h1 class="section-header__title">My Projects</h1>
+            <p class="section-header__desc">Showcase your best work. Search and filter to organize your portfolio.</p>
+          </header>
+
+          <div class="project-toolbar">
+            <div class="glass-card project-card project-form-card">
+              <div class="project-card__tags" style="margin-bottom: 1rem; gap: 0.5rem;">
+                <span class="project-card__tag">Backend</span>
+                <span class="project-card__tag">API</span>
+                <span class="project-card__tag">Dynamic</span>
+              </div>
+              <h2 class="project-card__title">Add a new project</h2>
+              <p class="project-card__desc">Submit a project and see it appear immediately in your portfolio list.</p>
+
+              <form class="project-form" data-project-form novalidate>
+                <div class="form-group">
+                  <label for="project-title" class="form-label">Project Title</label>
+                  <input id="project-title" name="title" type="text" class="form-input" placeholder="Enter project title" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="project-category" class="form-label">Category</label>
+                  <input id="project-category" name="category" type="text" class="form-input" placeholder="Web, Mobile, Data, Design" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="project-description" class="form-label">Description</label>
+                  <textarea id="project-description" name="description" class="form-textarea" placeholder="Write a short summary" rows="4" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn--primary">Add Project</button>
+              </form>
+            </div>
+
+            <div class="project-status" data-project-status aria-live="polite"></div>
+          </div>
+
+          
+          <div class="filter-bar" role="search" aria-label="Filter projects">
+            <div class="search-input-wrapper">
+              <label for="project-search" class="sr-only">Search projects</label>
+              <input type="search" id="project-search" class="search-input" data-project-search placeholder="Search projects by name or description…" aria-label="Search projects">
+            </div>
+            <div class="filter-tags" role="group" aria-label="Filter by category">
+              <button type="button" class="filter-tag filter-tag--active" data-filter-tag="all">All</button>
+              <button type="button" class="filter-tag" data-filter-tag="web">Web Dev</button>
+              <button type="button" class="filter-tag" data-filter-tag="mobile">Mobile</button>
+              <button type="button" class="filter-tag" data-filter-tag="data">Data Science</button>
+              <button type="button" class="filter-tag" data-filter-tag="design">Design</button>
+            </div>
+          </div>
+
+          
+          <div class="projects-grid" data-projects-grid role="list" aria-label="Project listings"></div>
+
+          <p class="no-results" data-no-results role="status">No projects match your search. Try different keywords or filters.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-bottom" style="margin-top: 0; border-top: none; padding-top: 0;">
+          <p>&copy; 2025 SkillForge. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/projects.js" defer></script>
+</body>
+</html>
