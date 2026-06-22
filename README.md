@@ -4,11 +4,11 @@
 
 SkillForge is a full-stack student career and portfolio platform that helps students showcase projects, track skills, explore internships, and receive AI-inspired career recommendations.
 
-This project combines a responsive frontend with a RESTful backend API built using Node.js and Express.js.
+This project combines a responsive frontend built with HTML, CSS, and JavaScript with a RESTful backend API built using Node.js and Express.js.
 
 ---
 
-## 🌟 Features
+## ✨ Features
 
 ### Frontend
 
@@ -17,9 +17,9 @@ This project combines a responsive frontend with a RESTful backend API built usi
 - Project Portfolio Showcase
 - Skill Tracking
 - Internship Explorer
-- Profile Management
+- Student Profile
 - Contact Form
-- Dark / Light Theme
+- Dark / Light Theme Toggle
 - Search & Filter Functionality
 
 ### Backend API
@@ -30,8 +30,8 @@ This project combines a responsive frontend with a RESTful backend API built usi
 - Internship Management
 - AI-Inspired Recommendations
 - Input Validation
-- Error Handling
-- JSON File Storage
+- Error Handling Middleware
+- JSON-Based Data Storage
 
 ---
 
@@ -61,15 +61,10 @@ Task---2--Yuggupta/
 ├── assets/
 ├── css/
 ├── js/
-│
-├── skillforge-api/
-│   ├── data/
-│   ├── middleware/
-│   ├── routes/
-│   ├── utils/
-│   ├── server.js
-│   ├── package.json
-│   └── package-lock.json
+├── data/
+├── middleware/
+├── routes/
+├── utils/
 │
 ├── index.html
 ├── dashboard.html
@@ -79,6 +74,7 @@ Task---2--Yuggupta/
 ├── profile.html
 ├── contact.html
 │
+├── server.js
 ├── package.json
 ├── package-lock.json
 ├── .gitignore
@@ -89,7 +85,7 @@ Task---2--Yuggupta/
 
 # 🚀 Getting Started
 
-## Clone Repository
+## 1. Clone the Repository
 
 ```bash
 git clone https://github.com/Yuggupta-max/Task---2--Yuggupta.git
@@ -98,34 +94,27 @@ cd Task---2--Yuggupta
 
 ---
 
-## Frontend Setup
+# 🎨 Run Frontend
 
-Install dependencies:
-
-```bash
-npm install
-```
-
-Run frontend:
+Open a new terminal and run:
 
 ```bash
-npm run dev
+npx live-server
 ```
 
 Frontend URL:
 
 ```text
-http://localhost:5000
+http://127.0.0.1:8080
 ```
 
 ---
 
-## Backend Setup
+# ⚙️ Run Backend API
 
-Open a new terminal:
+Open another terminal in the same project folder and run:
 
 ```bash
-cd skillforge-api
 npm install
 npm start
 ```
@@ -140,35 +129,35 @@ http://localhost:3000
 
 # 📡 API Endpoints
 
-## Users
+### Users
 
 ```http
 GET  /api/users
 POST /api/users
 ```
 
-## Projects
+### Projects
 
 ```http
 GET  /api/projects
 POST /api/projects
 ```
 
-## Skills
+### Skills
 
 ```http
 GET  /api/skills
 POST /api/skills
 ```
 
-## Internships
+### Internships
 
 ```http
 GET  /api/internships
 POST /api/internships
 ```
 
-## Recommendations
+### Recommendations
 
 ```http
 GET /api/recommendations
@@ -176,25 +165,9 @@ GET /api/recommendations
 
 ---
 
-# 🧪 Testing APIs
-
-You can test the API using:
-
-- Postman
-- Thunder Client
-- Insomnia
-
-Example:
-
-```http
-GET http://localhost:3000/api/projects
-```
-
----
-
 # 🔗 Frontend & Backend Integration
 
-The frontend fetches data from the backend API.
+The frontend communicates with the backend using REST APIs.
 
 Example:
 
@@ -208,25 +181,45 @@ Make sure both frontend and backend servers are running simultaneously.
 
 ---
 
-# 🎯 Project Objectives
+# 🧪 API Testing
 
-- Build a responsive frontend application
-- Develop RESTful APIs using Express.js
-- Implement CRUD operations
-- Validate API requests
-- Connect frontend with backend services
-- Demonstrate full-stack development concepts
+You can test API endpoints using:
+
+- Postman
+- Thunder Client
+- Insomnia
+
+Example:
+
+```http
+GET http://localhost:3000/api/projects
+```
 
 ---
 
-# 🔮 Future Improvements
+# 🎯 Learning Outcomes
+
+This project demonstrates:
+
+- Frontend Development
+- Responsive Web Design
+- REST API Development
+- API Integration
+- CRUD Operations
+- Form Validation
+- Error Handling
+- Full Stack Development Concepts
+
+---
+
+# 🔮 Future Enhancements
 
 - MongoDB Integration
-- User Authentication (JWT)
+- JWT Authentication
 - Resume Builder
+- File Upload Support
 - Real AI Recommendations
 - Cloud Deployment
-- File Upload Support
 
 ---
 
@@ -237,9 +230,4 @@ Make sure both frontend and backend servers are running simultaneously.
 Task 2 – Full Stack Development Project
 
 **SkillForge – Forge Your Skills. Showcase Your Future. 🚀**
-
-Built as a portfolio-worthy frontend project demonstrating modern web development practices without frameworks.
-
-**SkillForge** — *Forge Your Skills. Showcase Your Future.*
-
 **SkillForge** — *Forge Your Skills. Showcase Your Future.*
