@@ -115,6 +115,7 @@ http://127.0.0.1:8080
 Open another terminal in the same project folder and run:
 
 ```bash
+cd Task---2--Yuggupta
 npm install
 npm start
 ```
