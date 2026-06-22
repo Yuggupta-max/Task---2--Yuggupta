@@ -1,59 +1,89 @@
-# SkillForge
+# SkillForge — Task 2
 
-**An AI-powered student career and project showcase platform** built with HTML5, CSS3, and Vanilla JavaScript.
+**AI-powered student career and project showcase platform** with an integrated frontend and REST API backend.
 
-SkillForge helps students build project portfolios, track learning progress, discover internships, and explore AI-inspired career recommendations through a modern frontend UI.
+This repository is the Task 2 version of SkillForge, combining the static frontend pages with a Node.js/Express API in `skillforge-api`. The app enables portfolio browsing, skill tracking, internship discovery, and AI-inspired recommendations using API-driven data.
+
+---
+
+## Repository
+
+- GitHub: `https://github.com/Yuggupta-max/Task---2--Yuggupta`
+- Frontend: static HTML/CSS/JS in the repository root
+- Backend: Express API in `skillforge-api`
 
 ---
 
 ## Quick Start
 
-Clone the repository:
+### Prerequisites
+
+- Node.js v18 or newer
+- npm
+
+### Install Dependencies
 
 ```bash
-git clone https://github.com/Yuggupta-max/Task---1--Yuggupta.git
-cd Task---1--Yuggupta
-```
-
-Install dependencies:
-
-```bash
+cd "C:\Users\Yug Gupta\Downloads\SkillForge"
+npm install
+cd skillforge-api
 npm install
 ```
 
-Run the local preview server:
+### Run the App
+
+Open two terminal windows.
+
+1. Start the frontend server:
 
 ```bash
+cd "C:\Users\Yug Gupta\Downloads\SkillForge"
 npm run dev
 ```
 
-Open the app in your browser at:
+2. Start the API server:
 
-```text
-http://localhost:5000
+```bash
+cd "C:\Users\Yug Gupta\Downloads\SkillForge\skillforge-api"
+npm run dev
 ```
 
-> If you prefer not to use npm, you can also open `index.html` directly in the browser. Using `npm run dev` is recommended for best local behavior.
+### Access the App
+
+- Frontend: `http://localhost:5000`
+- API: `http://localhost:3000`
+
+---
+
+## Features
+
+- Responsive portfolio frontend with pages for dashboard, projects, skills, internships, profile, and contact
+- Integrated REST API backend for users, projects, skills, internships, and recommendations
+- Client-side dark/light mode with localStorage persistence
+- Search and filter experience for projects and internship listings
+- Form validation and accessible UI patterns
+- Lightweight JSON-backed data storage for easy local development
 
 ---
 
 ## API Server
 
-The API backend is located in `skillforge-api`.
+The backend is located in `skillforge-api`.
+
+### Start the API
 
 ```bash
 cd skillforge-api
-npm install
 npm run dev
 ```
 
-Default API URL:
+### Default API URL
 
 ```text
 http://localhost:3000
 ```
 
-Available API endpoints:
+### Available Endpoints
 
 - `GET /`
 - `GET /api/users`
@@ -68,136 +98,88 @@ Available API endpoints:
 
 ---
 
-## Recent Fix
-
-- Corrected a CSS syntax issue in `css/style.css` where declarations were accidentally placed outside a selector block after the `@media (min-width: 900px)` rule.
-
----
-
-## Features
-
-| Feature | Description |
-|---------|-------------|
-| **Project Portfolios** | Searchable, filterable project cards with category tags |
-| **Skill Tracking** | Animated progress bars, skill rings, custom skill logging |
-| **AI Career Insights** | Simulated AI recommendations on the dashboard |
-| **Internship Explorer** | Internship listings with filtering options |
-| **Dark/Light Mode** | Theme toggle with localStorage persistence |
-| **Responsive Design** | Layouts for mobile, tablet, and desktop |
-| **Accessibility** | ARIA labels, skip links, keyboard navigation |
-| **Form Validation** | Client-side validation for forms |
-
----
-
-## Tech Stack
-
-- **HTML5** — Semantic structure (`header`, `nav`, `main`, `section`, `article`, `footer`)
-- **CSS3** — Custom properties, Grid, Flexbox, `clamp()`, glassmorphism
-- **JavaScript (ES6+)** — Modular code, localStorage, IntersectionObserver
-- **Fonts** — [Inter](https://fonts.google.com/specimen/Inter), [Open Sans](https://fonts.google.com/specimen/Open+Sans)
-
-No frameworks or CSS preprocessors.
-
----
-
 ## Project Structure
 
 ```
 SkillForge/
 ├── index.html              # Landing page
-├── dashboard.html          # Career dashboard with AI insights
-├── projects.html           # Project portfolio with search/filter
-├── skills.html             # Skill progress tracker
-├── internships.html        # Internship explorer
-├── profile.html            # Student profile page
-├── contact.html            # Contact form with validation
+├── dashboard.html          # Career dashboard with recommendations
+├── projects.html           # Portfolio and project filtering
+├── skills.html             # Skill tracking and progress display
+├── internships.html        # Internship browsing and filters
+├── profile.html            # User profile page
+├── contact.html            # Contact form
 ├── css/
-│   ├── style.css           # Core design system & components
-│   └── responsive.css      # Breakpoint overrides (768px, 1024px)
+│   ├── style.css           # Core styles
+│   └── responsive.css      # Responsive layout rules
 ├── js/
-│   ├── main.js             # Shared modules (theme, nav, filters, etc.)
+│   ├── main.js             # Shared frontend behavior
 │   └── dashboard.js        # Dashboard-specific logic
 ├── assets/
-│   ├── images/             # SVG illustrations (optimized, lightweight)
-│   └── icons/              # Favicon
-└── README.md
+│   ├── images/             # UI assets and illustrations
+│   └── icons/              # Favicons and icons
+├── package.json            # Frontend dev server config
+├── README.md              # Project documentation
+└── skillforge-api/         # Backend API service
+    ├── package.json
+    ├── server.js
+    ├── routes/
+    ├── middleware/
+    ├── data/
+    └── utils/
 ```
 
 ---
 
-## Design System
+## Tech Stack
 
-### Color Palette
-
-| Token | Value | Usage |
-|-------|-------|-------|
-| Primary | `#A5896F` | Buttons, accents, links |
-| Secondary | `#A0D4E0` | Highlights, badges, focus rings |
-| Background | `#F2F0EA` | Page background |
-
-### Typography
-
-- **Headings:** Inter (500–800)
-- **Body:** Open Sans (400–600)
-- **Scale:** Fluid sizing via `clamp()`
-
-### Components
-
-- Glassmorphism cards with `backdrop-filter: blur(16px)`
-- Soft shadows and rounded corners (`border-radius: 14–32px`)
-- Gradient buttons and progress bars
+- Frontend: HTML5, CSS3, Vanilla JavaScript
+- Backend: Node.js, Express.js, CORS, dotenv
+- Data storage: JSON files in `skillforge-api/data`
+- Dev server: `serve` for frontend preview
 
 ---
 
-## JavaScript Modules
+## Backend Overview
 
-### `main.js`
+The API serves JSON data and provides validation middleware for each resource.
 
-| Module | Purpose |
-|--------|---------|
-| `ThemeManager` | Dark/light toggle, localStorage, system preference |
-| `Navigation` | Mobile menu, active page highlighting, Escape key |
-| `StatsCounter` | Animated number counters on scroll |
-| `ProjectFilter` | Search + category tag filtering |
-| `SkillTracker` | Progress bar animation, custom skill form, localStorage |
-| `InternshipFilter` | Role, location, type filtering |
-| `FormValidator` | Contact form validation with accessible errors |
-| `LazyLoader` | Lazy image loading with IntersectionObserver fallback |
+### Routes
 
-### `dashboard.js`
+- `/api/users` — user records
+- `/api/projects` — project portfolio data
+- `/api/skills` — tracked skills data
+- `/api/internships` — internship listings
+- `/api/recommendations` — AI-inspired recommendation responses
 
-| Module | Purpose |
-|--------|---------|
-| `AIRecommendations` | Renders and refreshes simulated AI insights |
-| `DashboardProgress` | Animates dashboard progress bars |
-| `DashboardGreeting` | Time-based greeting |
-| `LearningStreak` | Streak counter with localStorage |
+### Validation
+
+Requests to `POST` endpoints are validated in `skillforge-api/middleware` before saving.
 
 ---
 
-## LocalStorage Keys
+## Running Locally
 
-| Key | Data |
-|-----|------|
-| `skillforge-theme` | `"light"` or `"dark"` |
-| `skillforge-skill-progress` | Array of `{ name, level }` custom skills |
-| `skillforge-dashboard` | Dashboard preferences (streak, userName) |
+1. Install dependencies in both folders.
+2. Start the frontend server at port `5000`.
+3. Start the API server at port `3000`.
+4. Open your browser at `http://localhost:5000`.
 
----
-
-## Accessibility
-
-- Skip-to-content link on every page
-- Semantic landmarks and ARIA labels
-- `aria-expanded`, `aria-current`, `aria-invalid` on interactive elements
-- Keyboard support: Escape closes mobile menu, focus management
-- `prefers-reduced-motion` and `prefers-contrast` media queries
-- Sufficient color contrast in both light and dark themes
-- Form errors linked via `role="alert"`
+If the API port is busy, the backend will try `3001` and `3002` automatically.
 
 ---
 
-## Responsive Breakpoints
+## Notes
+
+- This Task 2 repo is designed as a separate integrated app from Task 1.
+- Use the root `index.html` and supporting pages with the `skillforge-api` backend for data.
+- The backend uses file-based JSON storage, so changes persist locally without a database.
+
+---
+
+## Contact
+
+If you need further updates or want this README tailored to specific deployment instructions, I can update it again.
 
 | Breakpoint | Layout Changes |
 |------------|----------------|
